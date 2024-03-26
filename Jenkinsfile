@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Check Version'){
             steps {
-                sh 'node -v'
-                sh 'npm -v'
+                sh 'node --version'
+                sh 'npm --version'
             }
         }
         stage('Build') { 

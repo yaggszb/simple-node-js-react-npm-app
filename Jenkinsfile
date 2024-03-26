@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Check Version'){
             steps {
-                echo $PATH
                 sh 'node --version'
                 sh 'npm --version'
             }

@@ -1,11 +1,10 @@
 pipeline {
     agent any
 
-    tools { nodejs "nodejs" }
-    
     stages {
         stage('Check Version'){
             steps {
+                echo $PATH
                 sh 'node --version'
                 sh 'npm --version'
             }
